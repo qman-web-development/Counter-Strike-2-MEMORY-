@@ -1,0 +1,7 @@
+[
+  {
+    "dust_2": { "pair": 6, "color": "#fb7d34", "level": "easy" },
+    "train": { "pair": 8, "color": "#b881c8", "level": "medium" },
+    "inferno": { "pair": 12, "color": "#d11717", "level": "hard" }
+  }
+]
