@@ -1,0 +1,108 @@
+.card-game {
+  position: relative;
+  transition: 0.5s transform ease-in;
+  transform-style: preserve-3d;
+
+  &.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card-face {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+
+    &.is-front {
+      transform: rotateY(180deg);
+      background-size: contain;
+      border: 3px solid #fff;
+      box-shadow: inset -1px 4px 15px -7px rgb(0 0 0);
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    &.is-back {
+      background-image: url("/images/cs2_bg_empty@2x.webp");
+      background-size: contain;
+    }
+
+    .card-image {
+      max-width: 100%;
+    }
+
+    .icon-checkmark {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+
+      @media screen and (min-width: 1024px) {
+        right: 5px;
+        bottom: 5px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      border-radius: 3px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      border-radius: 10px;
+    }
+  }
+}
+
+.is-front.ak47 {
+  background: linear-gradient(90deg, rgb(98, 101, 103) 0%, rgb(222, 222, 217) 50%, rgb(180, 179, 168) 100%);
+}
+
+.is-front.awp {
+  background: linear-gradient(90deg, rgb(143, 98, 151) 0%, rgb(227, 215, 230) 50%, rgb(176, 146, 182) 100%);
+}
+
+.is-front.dual_berettas {
+  background: linear-gradient(90deg, rgb(90, 151, 120) 0%, rgb(201, 227, 204) 50%, rgb(137, 210, 135) 100%);
+}
+
+.is-front.gail {
+  background: linear-gradient(90deg, rgb(147, 151, 98) 0%, rgb(237, 239, 211) 50%, rgb(180, 184, 137) 100%);
+}
+
+.is-front.glock {
+  background: linear-gradient(90deg, rgb(151, 98, 106) 0%, rgb(235, 220, 222) 50%, rgb(198, 156, 162) 100%);
+}
+
+.is-front.knife {
+  background: linear-gradient(90deg, rgb(86, 106, 188) 0%, rgb(210, 216, 239) 50%, rgb(137, 149, 197) 100%);
+}
+
+.is-front.m4a1 {
+  background: linear-gradient(90deg, rgb(165, 120, 88) 0%, rgb(225, 203, 186) 50%, rgb(201, 166, 141) 100%);
+}
+
+.is-front.m249 {
+  background: linear-gradient(90deg, rgb(116, 84, 139) 0%, rgb(175, 154, 190) 50%, rgb(179, 143, 204) 100%);
+}
+
+.is-front.mp7 {
+  background: linear-gradient(90deg, rgb(149, 181, 96) 0%, rgb(203, 220, 177) 50%, rgb(189, 224, 132) 100%);
+}
+
+.is-front.nova {
+  background: linear-gradient(90deg, rgb(129, 73, 73) 0%, rgb(223, 144, 144) 50%, rgb(177, 118, 118) 100%);
+}
+
+.is-front.p90 {
+  background: linear-gradient(90deg, rgb(166, 45, 142) 0%, rgb(183, 97, 165) 50%, rgb(220, 73, 190) 100%);
+}
+
+.is-front.scar20 {
+  background: linear-gradient(90deg, rgb(98, 151, 151) 0%, rgb(205, 236, 218) 50%, rgb(98, 151, 151) 100%);
+}
